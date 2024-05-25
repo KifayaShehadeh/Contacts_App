@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from .views import get_contacts
 
+app_name = 'contacts'
 
 urlpatterns = [
     path('api/contacts/', views.get_contacts, name='get_contacts'),
