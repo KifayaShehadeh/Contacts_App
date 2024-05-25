@@ -9,7 +9,7 @@ const Contacts = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/contacts/')
+    axios.get('https://contacts-app-qsy5.onrender.com/')
       .then(response => {
         setContacts(response.data);
       })
