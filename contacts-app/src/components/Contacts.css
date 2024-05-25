@@ -1,0 +1,65 @@
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff3e0; /* Light orange background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contacts-container h1 {
+  color: #ff8c00; /* Dark orange */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contacts-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe0b2; /* Soft orange */
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  background-color: #ffcc80; /* Slightly darker orange on hover */
+}
+
+.contact-name {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.contact-email {
+  font-size: 1em;
+  color: #888;
+}
+
+.close-button {
+  background-color: #ff8c00; /* Dark orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background-color: #e07b00; /* Slightly darker orange */
+}
