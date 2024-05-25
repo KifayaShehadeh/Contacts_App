@@ -6,14 +6,14 @@ from django.conf.urls.static import static
 
 # Simple view function to handle the base URL
 def home_view(request):
-    return HttpResponse("Welcome to the Contacts App API! Visit /data/ to see the contacts.")
+    return HttpResponse("Welcome to the Contacts App API! Visit /cotacts/ to see the contacts.")
 
 # Alternatively, redirect to the contacts API
 def home_view(request):
-    return redirect('/data/')
+    return redirect('/contacts/')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('data/', include('data.urls')),
+    path('contacts/', include('contacts.urls')),
     path('', home_view),  # Add this line to handle the base URL
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
