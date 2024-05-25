@@ -132,7 +132,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://contacts-app-1.onrender.com/contacts/get_contacts'
+    'https://contacts-app-1.onrender.com'
     'http://192.168.0.3:3000'
     # Add other allowed origins as needed
 ]
