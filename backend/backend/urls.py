@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 from django.conf import settings
 from django.conf.urls.static import static
+from django.shortcuts import redirect
 
 # Simple view function to handle the base URL
 def home_view(request):
