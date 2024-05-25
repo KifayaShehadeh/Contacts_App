@@ -6,5 +6,5 @@ from django.urls import path
 app_name = 'contacts'
 
 urlpatterns = [
-    path('contacts/', views.get_contacts, name='get_contacts'),
+    path('get_contacts/', views.get_contacts, name='get_contacts'),
 ]
