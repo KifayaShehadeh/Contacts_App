@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fk9*-^(rfq(c!c1^p*d&slkv8gyf3vtj*tun*9b^b**5f#fi@r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [contacts-app-qsy5.onrender.com]
+ALLOWED_HOSTS = ['contacts-app-qsy5.onrender.com']
 
 
 # Application definition
