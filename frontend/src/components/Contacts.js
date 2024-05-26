@@ -9,13 +9,20 @@ const Contacts = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    axios.get('https://contacts-app-qsy5.onrender.com/contacts/get_contacts')
-      .then(response => {
+    const fetchContacts = async () => {
+      try {
+        const response = await axios.get('https://contacts-app-qsy5.onrender.com/contacts/get_contacts', {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
         setContacts(response.data);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error("There was an error fetching the contacts!", error);
-      });
+      }
+    };
+
+    fetchContacts();
   }, []);
 
   const openModal = (contact) => {
