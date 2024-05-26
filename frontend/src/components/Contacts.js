@@ -9,7 +9,7 @@ const Contacts = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/contacts/')
+    axios.get('http://localhost:8000/contacts/get_contacts/')
       .then(response => {
         setContacts(response.data);
       })
