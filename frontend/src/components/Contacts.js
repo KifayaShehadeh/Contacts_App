@@ -11,7 +11,7 @@ const Contacts = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await axios.get('https://contacts-app-qsy5.onrender.com/contacts/get_contacts', {
+        const response = await axios.get('http://localhost:3000/contacts/get_contacts', {
           headers: {
             'Content-Type': 'application/json',
           },
