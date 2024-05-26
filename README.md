@@ -29,7 +29,8 @@ Run the Django development server:
 
 `The backend server will start at http://127.0.0.1:8000/.`
 
-Frontend (React)
+### Frontend (React)
+
 Navigate to the frontend directory:
 
 `cd ../frontend`
