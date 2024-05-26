@@ -29,6 +29,7 @@ Apply database migrations:
 Run the Django development server:
 
 `python manage.py runserver`
+
 `The backend server will start at http://127.0.0.1:8000/.`
 
 Frontend (React)
@@ -48,9 +49,11 @@ The frontend server will start at http://localhost:3000/.`
 Running the Application
 Make sure both the backend and frontend servers are running:
 
-`Django server at http://127.0.0.1:8000/
-React server at http://localhost:3000/
-Open a browser and navigate to http://localhost:3000/ to use the Contacts App.`
+`Django server at http://127.0.0.1:8000/`
+
+`React server at http://localhost:3000/`
+
+`Open a browser and navigate to http://localhost:3000/ to use the Contacts App.`
 
 
 
