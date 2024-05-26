@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-fk9*-^(rfq(c!c1^p*d&slkv8gyf3vtj*tun*9b^b**5f#fi@r
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'contacts-app-1.onrender.com',
     'contacts-app-qsy5.onrender.com',
-    'https://contacts-app-qsy5.onrender.com/contacts/get_contacts']
-
+    'localhost',
+]
 
 # Application definition
 
