@@ -7,7 +7,7 @@ import requests
 class ContactsAPITests(TestCase):
     def setUp(self):
         self.client = APIClient()
-        self.url = reverse('get_contacts')
+        self.url = reverse('contacts:get_contacts')
         self.mock_response = [
             {
                 "id": 1,
