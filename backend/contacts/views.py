@@ -7,4 +7,5 @@ import requests
 def get_contacts(request):
     response = requests.get('https://jsonplaceholder.typicode.com/users')
     contacts = response.json()
+    print(contacts)
     return Response(contacts)
