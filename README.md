@@ -8,7 +8,6 @@ This project is a Contacts App that consists of a Django backend and a React fro
 - Python 3.x
 - Node.js and npm (Node Package Manager)
 - pip (Python package installer)
-- virtualenv (for creating a virtual environment)
 
 ## Setup Instructions
 
