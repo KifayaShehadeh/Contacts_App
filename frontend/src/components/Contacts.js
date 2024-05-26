@@ -9,20 +9,13 @@ const Contacts = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    const fetchContacts = async () => {
-      try {
-        const response = await axios.get('http://localhost:3000/contacts/get_contacts', {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        });
+    axios.get('http://localhost:8000/api/contacts/')
+      .then(response => {
         setContacts(response.data);
-      } catch (error) {
+      })
+      .catch(error => {
         console.error("There was an error fetching the contacts!", error);
-      }
-    };
-
-    fetchContacts();
+      });
   }, []);
 
   const openModal = (contact) => {
