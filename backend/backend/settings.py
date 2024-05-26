@@ -135,3 +135,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://192.168.0.3:3000'
     # Add other allowed origins as needed
 ]
+
+from corsheaders.defaults import default_headers
+
+CORS_ALLOW_HEADERS = (
+    *default_headers,
+    "Access-Control-Allow-Origin"
+)
