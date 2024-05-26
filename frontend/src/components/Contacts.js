@@ -14,6 +14,9 @@ const Contacts = () => {
         const response = await axios.get('https://contacts-app-qsy5.onrender.com/contacts/get_contacts', {
           headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': '*'
           },
         });
         setContacts(response.data);
