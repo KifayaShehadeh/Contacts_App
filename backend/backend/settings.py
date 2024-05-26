@@ -127,11 +127,12 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = False 
+CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://contacts-app-1.onrender.com',
+    'https://contacts-app-qsy5.onrender.com',
     'http://192.168.0.3:3000'
     # Add other allowed origins as needed
 ]
