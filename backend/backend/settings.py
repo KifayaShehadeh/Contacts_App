@@ -143,5 +143,9 @@ from corsheaders.defaults import default_headers
 
 CORS_ALLOW_HEADERS = (
     *default_headers,
-    "Access-Control-Allow-Origin"
+    "Access-Control-Allow-Origin",
+    'Authorization',
+    'Content-Type',
 )
+
+CORS_ALLOW_CREDENTIALS = True
