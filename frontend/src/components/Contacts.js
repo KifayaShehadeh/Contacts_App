@@ -9,7 +9,7 @@ const Contacts = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/contacts/get_contacts/')
+    axios.get('https://jsonplaceholder.typicode.com/users')
       .then(response => {
         setContacts(response.data);
       })
